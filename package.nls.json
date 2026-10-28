@@ -1,0 +1,9 @@
+{
+  "description": "Restore Vibrancy, Smooth UI, local Doki stickers and Custom CSS after updates, with confirmation and backups.",
+  "restore": "Restore Appearance",
+  "check": "Check Appearance",
+  "backups": "Open Backups",
+  "log": "Show Log",
+  "notify": "Offer to restore appearance after the editor or a supported extension changes. Never patches automatically.",
+  "trust": "Restoration can run installed extensions that modify the editor. Open a trusted workspace to continue."
+}

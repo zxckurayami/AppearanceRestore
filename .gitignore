@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.vsix
+.env
+.env.*
+.vscode/
+.cache/
+backups/
+restore.lock
+*.log
+.DS_Store
+Thumbs.db
+
+# Machine-local visual QA uses tools outside the public project.
+test/preview-assets.js

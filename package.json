@@ -1,0 +1,44 @@
+{
+  "name": "appearance-restore",
+  "displayName": "Appearance Restore",
+  "description": "%description%",
+  "version": "1.1.2",
+  "icon": "media/icon.png",
+  "publisher": "zxckurayami",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/zxckurayami/AppearanceRestore.git" },
+  "homepage": "https://github.com/zxckurayami/AppearanceRestore#readme",
+  "bugs": { "url": "https://github.com/zxckurayami/AppearanceRestore/issues" },
+  "engines": { "vscode": "^1.96.0" },
+  "categories": ["Other"],
+  "keywords": ["appearance", "restore", "custom css", "smooth ui", "doki", "vibrancy"],
+  "galleryBanner": { "color": "#0b1221", "theme": "dark" },
+  "extensionKind": ["ui"],
+  "main": "./src/extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "capabilities": {
+    "untrustedWorkspaces": { "supported": false, "description": "%trust%" },
+    "virtualWorkspaces": false
+  },
+  "contributes": {
+    "commands": [
+      { "command": "appearanceRestore.restore", "title": "%restore%", "category": "Appearance Restore", "icon": "$(paintcan)" },
+      { "command": "appearanceRestore.check", "title": "%check%", "category": "Appearance Restore" },
+      { "command": "appearanceRestore.backups", "title": "%backups%", "category": "Appearance Restore" },
+      { "command": "appearanceRestore.log", "title": "%log%", "category": "Appearance Restore" }
+    ],
+    "configuration": {
+      "title": "Appearance Restore",
+      "properties": {
+        "appearanceRestore.notifyAfterUpdate": {
+          "type": "boolean", "default": true, "scope": "application", "description": "%notify%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "prepackage": "node -e \"require('node:fs').mkdirSync('dist', { recursive: true })\"",
+    "package": "npx --yes --package @vscode/vsce vsce package --no-dependencies --out dist/appearance-restore-1.1.2.vsix"
+  }
+}

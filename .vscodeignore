@@ -1,0 +1,11 @@
+test/**
+dist/**
+node_modules/**
+.git/**
+package-lock.json
+.gitignore
+media/*.svg
+PUBLISHING.md
+.github/**
+.gitattributes
+docs/**
