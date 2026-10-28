@@ -1,6 +1,6 @@
-# Appearance Restore
+<img src="https://raw.githubusercontent.com/zxckurayami/AppearanceRestore/main/media/icon.png" width="256" height="256" alt="Appearance Restore icon">
 
-<img src="https://raw.githubusercontent.com/zxckurayami/AppearanceRestore/main/media/icon.png" width="96" height="96" alt="Appearance Restore icon">
+# Appearance Restore
 
 Актуальная версия: **1.1.2**
 
